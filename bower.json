@@ -1,0 +1,23 @@
+{
+  "name": "TIY-Mashup",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pope410211/TIY-Mashup",
+  "authors": [
+    "Nick Pope <pope410211@gmail.com>"
+  ],
+  "description": "Brew Buddies",
+  "license": "CCO",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3",
+    "jQuery": "~2.1.4",
+    "lodash": "~3.9.3"
+  }
+}
