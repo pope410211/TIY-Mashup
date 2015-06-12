@@ -1,0 +1,29 @@
+{
+  "name": "TIY-Mashup",
+  "version": "0.0.0",
+  "description": "Brew Buddies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files='index.html, css/*.css, js/*.js' --startPath src/index.html'",
+    "bower:install": "bower install --save",
+    "postboer:install": "wired --src src/index.html",
+    "sass": "node-sass src/scss/main.scss -o src/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pope410211/TIY-Mashup.git"
+  },
+  "author": "Nick Pope (pope410211)",
+  "license": "CCO",
+  "bugs": {
+    "url": "https://github.com/pope410211/TIY-Mashup/issues"
+  },
+  "homepage": "https://github.com/pope410211/TIY-Mashup",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.7.9",
+    "node-sass": "^3.2.0",
+    "wiredep": "^2.2.2"
+  }
+}
