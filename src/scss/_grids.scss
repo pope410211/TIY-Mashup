@@ -4,11 +4,11 @@
   max-width: 80%;
   @extend .clearfix;
   margin: 0 auto;
-  background-color: grey;
+  background-color: lightgrey;
   outline: 1px solid red;
 
   .unit-span-ref {
-    background-color: lightblue;
+    background-color: grey;
     outline: 1px solid purple;
     width: ($gird-width/12) * 1;
     padding-left: 2em;
@@ -17,11 +17,12 @@
       &:first-child{
         padding-right: 0;
       }
+      .div {
+        background-color: lightblue;
+        padding-right: 1em;
+      }
 
 
 
   }
-
-
-
 }
