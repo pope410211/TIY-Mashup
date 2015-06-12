@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files='index.html, css/*.css, js/*.js' --startPath src/index.html'",
     "bower:install": "bower install --save",
-    "postboer:install": "wired --src src/index.html",
+    "postbower:install": "wiredep --src src/index.html",
     "sass": "node-sass src/scss/main.scss -o src/css/"
   },
   "repository": {
