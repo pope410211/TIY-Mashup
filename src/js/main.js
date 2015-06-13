@@ -1,9 +1,9 @@
 $.getJSON('/../../api/brewery-db/zombie-killer.json')
- .then(function(message){
-   console.log(message);
+ .then(function(zombieKiller){
+   console.log(zombieKiller);
 
-   $beerName = $('h4.beername');
-   $beerName.text(message.name);
+   $beerTitle = $('.beername');
+   $beerTitle.text(zombieKiller.name);
 
  });
 
@@ -11,8 +11,8 @@ $.getJSON('/../../api/youtube/b-nektar.json')
 .then(function(bnektar){
   console.log(bnektar);
 
-  $vidTitle = $('h4#nektar');
+  $vidTitle = $('#nektar');
   $vidTitle.text(bnektar.title);
 
 
-})
+});
