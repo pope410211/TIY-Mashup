@@ -18,3 +18,24 @@ $.getJSON('/../../api/brewery-db/zombiekiller.json')
    $beerimage.attr('src', zombiekiller.data.labels.medium);
 
  });
+
+ $.getJSON('/../../api/brewery-db/kellerweis.json')
+  .then(function(kellerweis){
+    console.log(kellerweis);
+
+    $beername = $('#beername');
+    $beername.text(kellerweis.data.name);
+
+    $abvvalue = $('#abvvalue');
+    $abvvalue.text(kellerweis.data.abv);
+
+    $describe = $('#describe');
+    $describe.text(kellerweis.data.description);
+
+    $catdes = $('#catdes');
+    $catdes.text(kellerweis.data.style.description);
+
+    $beerimage = $('img', '.beerimage');
+    $beerimage.attr('src', kellerweis.data.labels.medium);
+
+  });
