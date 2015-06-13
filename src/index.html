@@ -10,7 +10,7 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
         <!-- endbower -->
-        <link rel="stylesheet" href="css/main.css">
+<!--        <link rel="stylesheet" href="css/main.css"> -->
     </head>
     <body>
       <!-- Reference Grid 12 units -->
@@ -36,15 +36,20 @@
           <option>Kellerweis</option>
           <option>Zombie Killer</option>
         </select>
-          <h4 class="beername">{{name}}</h4>
+          <h4 id="beername">{{name}}</h4>
+          <img id="beerimage">{{beerimage}}</img>
           <ul>
             <li>
-              abv
-              <p>{{abv}}</p>
+              ABV
+              <p id="abvvalue">{{abv}}</p>
             </li>
             <li>
-              description
-              <p>{{description}}</p>
+              Description
+              <p id="describe">{{description}}</p>
+            </li>
+            <li>
+              Category Description
+              <p id="catdes">{{catdes}}</p>
             </li>
           </ul>
         </div>
