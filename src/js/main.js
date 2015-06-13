@@ -14,5 +14,10 @@ $.getJSON('/../../api/youtube/b-nektar.json')
   $vidTitle = $('#nektar');
   $vidTitle.text(bnektar.title);
 
+  $vidPlayer = $('#meadery')
+  $vidPlayer.attr(bnektar.html)
+
+  $vidPlayerIMG = $('#meadery')
+  $vidPlayerIMG.attr(bnektar.thumbnail_url)
 
 });
