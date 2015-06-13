@@ -3,7 +3,7 @@ $.getJSON('/../../api/brewery-db/zombie-killer.json')
    console.log(zombieKiller);
 
    $beerTitle = $('.beername');
-   $beerTitle.text(zombieKiller.name);
+   $beerTitle.text(zombieKiller.data.name);
 
  });
 
