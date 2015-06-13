@@ -14,4 +14,7 @@ $.getJSON('/../../api/brewery-db/zombiekiller.json')
    $catdes = $('#catdes');
    $catdes.text(zombiekiller.data.style.description);
 
+   $beerimage = $('img', '.beerimage');
+   $beerimage.attr('src', zombiekiller.data.labels.medium);
+
  });
