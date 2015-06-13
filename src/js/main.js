@@ -6,3 +6,10 @@ $.getJSON('/../../api/brewery-db/zombie-killer.json')
    $beername.text(message.name);
 
  });
+
+$.getJSON('/../../api/youtube/mead.json')
+.then(function(mead){
+  console.log(mead);
+
+  
+})
