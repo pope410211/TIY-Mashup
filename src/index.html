@@ -12,24 +12,6 @@
     <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <link rel="stylesheet" href="css/main.css">
-</head>
-
-<header class="topofpage">
-    <h1>Brew Buddies</h1>
-     <h3>Our favorite selections</h3>
-      <div class=selector>
-      <select>
-            <option>Kellerweis</option>
-            <option>Zombie Killer</option>
-      </select>
-    </div>
-        <div class="headimage">
-            <img src="http://www.beer-universe.com/images/articles/352/Beer-hops.jpg" style="width:7em; height:7em;">
-        </div>
-</header>
-
-
-<body>
     <!-- Reference Grid 12 units -->
     <section class="grid">
         <div class="unit-span-ref">
@@ -46,71 +28,63 @@
         <div class="unit-span-ref">10</div>
         <div class="unit-span-ref">11</div>
         <div class="unit-span-ref">12</div>
-<<<<<<< HEAD
     </section>
     <!-- End Reference Grid -->
+</head>
 
-    <div class="beers">
-        <h4 id="beername">{{name}}</h4>
-        <div class="beerimage">
-            <img src="http://lorempixel.com/output/food-q-g-530-530-7.jpg" </img>
-        </div>
-        <ul>
-=======
-      </section>
-        <!-- End Reference Grid -->
-        <section class=" ">
-      <div class="beers">
-          <h3>See some of our favorite selections</h3>
+<header class="topofpage">
+    <h1>Brew Buddies</h1>
+    <h3>Our favorite selections</h3>
+    <div class=selector>
         <select name="select-beer" id="dropbox">
-          <option value="zombieK">Zombie Killer</option>
-          <option value="kellerW">Kellerweis</option>
+            <option value="zombieK">Zombie Killer</option>
+            <option value="kellerW">Kellerweis</option>
         </select>
-          <h4 id="beername">{{name}}</h4>
-          <div class="beerimage">
-          <img src=" "</img>
-          </div>
-          <ul>
->>>>>>> b7901346b9d800082ac023cc33477397a4ce8b04
-            <li>
-                ABV
-                <p id="abvvalue">{{abv}}</p>
-            </li>
-            <li>
-                Description
-                <p id="describe">{{description}}</p>
-            </li>
-            <li>
-                Category Description
-                <p id="catdes">{{catdes}}</p>
-            </li>
-<<<<<<< HEAD
-        </ul>
     </div>
+    <div class="headimage">
+        <img src="http://www.beer-universe.com/images/articles/352/Beer-hops.jpg" style="width:7em; height:7em;">
+    </div>
+</header>
 
 
-=======
-          </ul>
-        </div>
-        <div class="unit-span-1" id="B-Nektar">
-          <h4 class="video name" id="nektar">{{title}}</h4>
-          <ul class="video">
-            <li class= "vid info" id="vid1">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/N7TaLVAYstA" frameborder="0" allowfullscreen></iframe>
-            </li>
-            <li class="vid info" id="descript1">{{description}}</li>
-            <h4 class="video name" id="meadery">{{title}}</h4>
-            <li class="vid info" id="vid2">
-             <iframe width="420" height="315" src="https://www.youtube.com/embed/c2ueyNQfnfE" frameborder="0" allowfullscreen></iframe>
+<body>
+    <section class="grid">
 
-            </li>
-            <li class="vid info" id="descript2">{{description}}</li>
-          </ul>
-        </div>
-      </section>
-      </div>
->>>>>>> b7901346b9d800082ac023cc33477397a4ce8b04
 
+        <div class="unit-span-1">
+                <h4 id="beername">{{name}}</h4>
+                    <img src=" " </img>
+                <ul>
+                    <li>
+                        ABV
+                        <p id="abvvalue">{{abv}}</p>
+                    </li>
+                    <li>
+                        Description
+                        <p id="describe">{{description}}</p>
+                    </li>
+                    <li>
+                        Category Description
+                        <p id="catdes">{{catdes}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="unit-span-1">
+                <h4 class="video name" id="nektar">{{title}}</h4>
+                <ul class="video">
+                    <li class="vid info" id="vid1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N7TaLVAYstA" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li class="vid info" id="descript1">{{description}}</li>
+                    <h4 class="video name" id="meadery">{{title}}</h4>
+                    <li class="vid info" id="vid2">
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/c2ueyNQfnfE" frameborder="0" allowfullscreen></iframe>
+
+                    </li>
+                    <li class="vid info" id="descript2">{{description}}</li>
+                </ul>
+    </section>
+    </div>
     <!-- bower:js -->
     <script src="../bower_components/jQuery/dist/jquery.js"></script>
     <script src="../bower_components/modernizr/modernizr.js"></script>

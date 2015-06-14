@@ -20,8 +20,11 @@
         background-color: lightblue;
         padding-right: 1em;
       }
+  }
 
-
+  .unit-span-1 {
+    width: ($gird-width/12) * 2;
+    float: left;
 
   }
 }
