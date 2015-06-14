@@ -11,9 +11,23 @@ $.getJSON('/../../api/youtube/b-nektar.json')
   $vidTitle = $('#nektar');
   $vidTitle.text(bnektar.title);
 
-  $vidDescript = $('#descript');
+  $vidDescript = $('#descript1');
   $vidDescript.text(bnektar.description);
 
+});
+
+$.getJSON('/../../api/youtube/mead.json')
+.then(function(meads){
+  console.log(meads);
+
+  $vidTitle = $('#meadery');
+  $vidTitle.text(meads.title);
+
+  $vidDescript = $('#descript2');
+  $vidDescript.text(meads.description);
+
+  $vidPlay = $('#vid2');
+  $vidPlay.add(meads.play);
 });
 // Beer JSON
 $.getJSON('/../../api/brewery-db/zombiekiller.json')
