@@ -1,3 +1,20 @@
+
+$.getJSON('/../../api/youtube/b-nektar.json')
+.then(function(bnektar){
+  console.log(bnektar);
+
+  $vidTitle = $('#nektar');
+  $vidTitle.text(bnektar.title);
+
+  $vidPlayer = $('iframe');
+  $vidPlayer.attr(bnektar.html);
+
+  $vidIMG = $('.vidimg');
+  $vidIMG.attr(bnektar.thumbnail_url)
+
+
+
+});
 $.getJSON('/../../api/brewery-db/zombiekiller.json')
  .then(function(zombiekiller){
    console.log(zombiekiller);
