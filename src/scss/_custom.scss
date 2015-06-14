@@ -1,0 +1,38 @@
+.topofpage {
+  display: inline-block;
+  width: 100%;
+  background-color: #472400;
+  color: #B7C981;
+  text-shadow: .05em .05em #FF8B21;
+  height: 8em;
+  font-size: 1.5em;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.topofpage h3 {
+  float: left;
+  font-size: 1em;
+  padding-left: 1em;
+  display: inline-block;
+}
+
+.topofpage h1 {
+  padding-top: .5em;
+  display: inline-block;
+  margin-left: 16%;
+}
+
+.topofpage select {
+  float: left;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.topofpage,.headimage {
+  content: " ";
+  display: table;
+  clear: both;
+  float: right;
+  display: inline-block;
+  margin-bottom: 2em
+}
