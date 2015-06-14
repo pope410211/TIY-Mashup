@@ -3,7 +3,7 @@ $("#dropbox").change(function beerchange() {
   if ($('#dropbox').val()=="zombieK") {
     console.log(beerchange);
 
-
+// Youtube JSON
 $.getJSON('/../../api/youtube/b-nektar.json')
 .then(function(bnektar){
   console.log(bnektar);
@@ -11,14 +11,11 @@ $.getJSON('/../../api/youtube/b-nektar.json')
   $vidTitle = $('#nektar');
   $vidTitle.text(bnektar.title);
 
-  $vidPlayer = $('iframe');
-  $vidPlayer.attr(bnektar.html);
-
-  $vidIMG = $('.vidimg');
-  $vidIMG.attr(bnektar.thumbnail_url)
+  $vidDescript = $('#descript');
+  $vidDescript.text(bnektar.description);
 
 });
-
+// Beer JSON
 $.getJSON('/../../api/brewery-db/zombiekiller.json')
  .then(function(zombiekiller){
    console.log(zombiekiller);
