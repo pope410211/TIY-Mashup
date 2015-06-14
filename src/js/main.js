@@ -1,7 +1,7 @@
 (function(window) {
 
 $("#dropbox").change(function beerchange() {
-  if ($('#dropbox').val()=="#zombieK") {
+  if ($('#dropbox').val()=="zombieK") {
     console.log(beerchange);
 
 
