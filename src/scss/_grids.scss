@@ -1,10 +1,14 @@
+body{
+  background-color: #7D6742;
+}
+
 .grid {
   $gird-width:100%;
   width: $gird-width;
   max-width: 80%;
   @extend .clearfix;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: #C3BC92 ;
 
   .unit-span-ref {
     background-color: grey;
@@ -25,6 +29,9 @@
   .unit-span-1 {
     width: ($gird-width/12) * 2;
     float: left;
+  }
 
+  .topofpage{
+    width: ($gird-width/12);
   }
 }
