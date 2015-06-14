@@ -14,8 +14,11 @@ $.getJSON('/../../api/youtube/b-nektar.json')
   $vidTitle = $('#nektar');
   $vidTitle.text(bnektar.title);
 
-  $vidPlayer = $('iframe')
-  $vidPlayer.attr(bnektar.thumbnail_url)
+  $vidPlayer = $('iframe');
+  $vidPlayer.attr(bnektar.html);
+
+  $vidIMG = $('.vidimg');
+  $vidIMG.attr(bnektar.thumbnail_url)
 
 
 
