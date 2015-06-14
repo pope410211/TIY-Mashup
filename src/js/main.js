@@ -26,8 +26,7 @@ $.getJSON('/../../api/youtube/mead.json')
   $vidDescript = $('#descript2');
   $vidDescript.text(meads.description);
 
-  $vidPlay = $('#vid2');
-  $vidPlay.add(meads.play);
+  
 });
 // Beer JSON
 $.getJSON('/../../api/brewery-db/zombiekiller.json')
