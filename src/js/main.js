@@ -1,10 +1,7 @@
-(function(window) {
 
 $("#dropbox").change(function beerchange() {
   if ($('#dropbox').val()=="zombieK") {
     console.log(beerchange);
-
-
 
 
 $.getJSON('/../../api/youtube/b-nektar.json')
@@ -19,8 +16,6 @@ $.getJSON('/../../api/youtube/b-nektar.json')
 
   $vidIMG = $('.vidimg');
   $vidIMG.attr(bnektar.thumbnail_url)
-
-
 
 });
 
@@ -69,10 +64,10 @@ $.getJSON('/../../api/brewery-db/zombiekiller.json')
     $beerimage.attr('src', kellerweis.data.labels.medium);
 
   });
-};
+}
 
 });
-});
+
 
 
 // http://www.mkyong.com/jquery/how-to-set-a-dropdown-box-value-in-jquery/
