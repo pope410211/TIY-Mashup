@@ -1,21 +1,40 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-        <!-- endbower -->
-<!--        <link rel="stylesheet" href="css/main.css"> -->
-    </head>
-    <body>
-      <!-- Reference Grid 12 units -->
-      <section class="grid">
-        <div class="unit-span-ref"><div>1</div></div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header class="topofpage">
+    <h1>Brew Buddies</h1>
+     <h3>Our favorite selections</h3>
+      <div class=selector>
+      <select>
+            <option>Kellerweis</option>
+            <option>Zombie Killer</option>
+      </select>
+    </div>
+        <div class="headimage">
+            <img src="http://www.beer-universe.com/images/articles/352/Beer-hops.jpg" style="width:7em; height:7em;">
+        </div>
+</header>
+
+
+<body>
+    <!-- Reference Grid 12 units -->
+    <section class="grid">
+        <div class="unit-span-ref">
+            <div>1</div>
+        </div>
         <div class="unit-span-ref">2</div>
         <div class="unit-span-ref">3</div>
         <div class="unit-span-ref">4</div>
@@ -27,43 +46,39 @@
         <div class="unit-span-ref">10</div>
         <div class="unit-span-ref">11</div>
         <div class="unit-span-ref">12</div>
-      </section>
-        <!-- End Reference Grid -->
+    </section>
+    <!-- End Reference Grid -->
 
-      <div class="beers">
-          <h3>See some of our favorite selections</h3>
-        <select>
-          <option>Kellerweis</option>
-          <option>Zombie Killer</option>
-        </select>
-          <h4 id="beername">{{name}}</h4>
-          <div class="beerimage">
-          <img src= "http://lorempixel.com/output/food-q-g-530-530-7.jpg"</img>
-          </div>
-          <ul>
-            <li>
-              ABV
-              <p id="abvvalue">{{abv}}</p>
-            </li>
-            <li>
-              Description
-              <p id="describe">{{description}}</p>
-            </li>
-            <li>
-              Category Description
-              <p id="catdes">{{catdes}}</p>
-            </li>
-          </ul>
+    <div class="beers">
+        <h4 id="beername">{{name}}</h4>
+        <div class="beerimage">
+            <img src="http://lorempixel.com/output/food-q-g-530-530-7.jpg" </img>
         </div>
-      </div>
+        <ul>
+            <li>
+                ABV
+                <p id="abvvalue">{{abv}}</p>
+            </li>
+            <li>
+                Description
+                <p id="describe">{{description}}</p>
+            </li>
+            <li>
+                Category Description
+                <p id="catdes">{{catdes}}</p>
+            </li>
+        </ul>
+    </div>
 
 
-        <!-- bower:js -->
-        <script src="../bower_components/jQuery/dist/jquery.js"></script>
-        <script src="../bower_components/modernizr/modernizr.js"></script>
-        <script src="../bower_components/lodash/lodash.js"></script>
-        <!-- endbower -->
-      <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+
+    <!-- bower:js -->
+    <script src="../bower_components/jQuery/dist/jquery.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <!-- endbower -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
