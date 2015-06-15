@@ -1,7 +1,7 @@
 .topofpage {
   display: inline-block;
+  background-image: url("http://penfieldauctions.com/wp-content/uploads/2015/01/wood-background-darker.jpg");
   width: 100%;
-  background-image: url("https://c4.staticflickr.com/4/3206/2690293890_cdacacc44c_b.jpg");
   height: 12em;
   font-family: "Arial Black", Gadget, sans-serif;
 }
@@ -25,15 +25,13 @@
 
 .topofpage #dropbox {
   display: inherit;
-  margin-left: 1em;
+  margin-left: 7em;
 }
 
 .topofpage,.headimage {
-  content: " ";
-  display: table;
-  clear: both;
-  float: right;
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-bottom: 2em
 }
 
