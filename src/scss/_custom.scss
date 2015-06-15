@@ -1,31 +1,31 @@
 .topofpage {
   display: inline-block;
   width: 100%;
-  background-color: #472400;
-  color: #B7C981;
-  text-shadow: .05em .05em #FF8B21;
-  height: 8em;
-  font-size: 1.5em;
+  background-image: url("https://c4.staticflickr.com/4/3206/2690293890_cdacacc44c_b.jpg");
+  height: 12em;
   font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .topofpage h3 {
   float: left;
-  font-size: 1em;
+  font-size: 1.7em;
   padding-left: 1em;
   display: inline-block;
+  color: #2E8A5C;
+  text-shadow: 1px 1px #FFAD33;
 }
 
 .topofpage h1 {
-  padding-top: .5em;
+  padding-top: .2em;
   display: inline-block;
-  margin-left: 16%;
+  font-size: 3em;
+  margin-left: 13%;
+  color: #FFAD33;
 }
 
-.topofpage select {
-  float: left;
+.topofpage #dropbox {
+  display: inherit;
   margin-left: 1em;
-  display: inline-block;
 }
 
 .topofpage,.headimage {
@@ -35,4 +35,27 @@
   float: right;
   display: inline-block;
   margin-bottom: 2em
+}
+
+body {
+  background-color: #942201;
+}
+
+.grid {
+  background-color: #CDC6A2;
+}
+
+li {
+  list-style: none;
+}
+
+.unit-4-12 {
+  width: 32%;
+  float: left;
+  padding-left: 1em;
+}
+
+.unit-8-12 {
+  width: 62%;
+  float: right;
 }

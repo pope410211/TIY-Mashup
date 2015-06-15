@@ -1,27 +1,28 @@
 .grid {
-  $gird-width:100%;
-  width: $gird-width;
-  max-width: 80%;
+
   @extend .clearfix;
+  $grid-width: 100%;
+  max-width: 80%;
   margin: 0 auto;
-  background-color: lightgrey;
+  float: inherit;
 
-  .unit-span-ref {
-    background-color: grey;
-    outline: 1px solid purple;
-    width: ($gird-width/12) * 1;
-    padding-left: 2em;
+  width: $grid-width;
+
+  $unit-span-ref: ($grid-width/12);
+
+  .unit-1-12 {
+    width: $unit-span-ref;
     float: left;
-    box-sizing: border-box;
-      &:first-child{
-        padding-right: 0;
-      }
-      .div {
-        background-color: lightblue;
-        padding-right: 1em;
-      }
 
+  .unit-4-12 {
+    @extend .unit-1-12;
+    width: $unit-span-ref * 4;
+  }
 
+  .unit-8-12 {
+    @extend .unit-1-12;
+    width: $unit-span-ref * 8;
+  }
 
   }
 }
