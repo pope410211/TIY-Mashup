@@ -19,19 +19,18 @@
   padding-top: .2em;
   display: inline-block;
   font-size: 3em;
-  margin-left: 13%;
+  margin-left: 6%;
   color: #FFAD33;
 }
 
 .topofpage #dropbox {
-  display: inherit;
-  margin-left: 7em;
+  display: inline-block;
+  float: left;
+  margin-top: 7em;
 }
 
 .topofpage,.headimage {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
   margin-bottom: 2em
 }
 
