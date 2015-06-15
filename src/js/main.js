@@ -15,6 +15,9 @@ $.getJSON('/../../api/youtube/b-nektar.json')
   $vidDescript = $('#descript1');
   $vidDescript.text(bnektar.description);
 
+  $vidPlay = $('#vid1');
+  $vidPlay.append(bnektar.html);
+
 });
 
 $.getJSON('/../../api/youtube/mead.json')
@@ -73,6 +76,21 @@ $.getJSON('/../../api/brewery-db/zombiekiller.json')
 
     $beerimage = $('img', '.beerimage');
     $beerimage.attr('src', kellerweis.data.labels.medium);
+
+  });
+  // Youtube JSON
+  $.getJSON('/../../api/youtube/mead.json')
+  .then(function(meads){
+    console.log(meads);
+
+    $vidTitle = $('#nektar');
+    $vidTitle.text(meads.title);
+
+    $vidDescript = $('#descript1');
+    $vidDescript.text(meads.description);
+
+    $vidPlay = $('#vid1');
+    $vidPlay.append(meads.html);
 
   });
 }
