@@ -1,3 +1,4 @@
+alert("Our Group ROCKED! Also go see Jurassic World");
 
 $("#dropbox").change(function beerchange() {
   if ($('#dropbox').val()=="zombieK") {
@@ -26,7 +27,7 @@ $.getJSON('/../../api/youtube/mead.json')
   $vidDescript = $('#descript2');
   $vidDescript.text(meads.description);
 
-  
+
 });
 // Beer JSON
 $.getJSON('/../../api/brewery-db/zombiekiller.json')
