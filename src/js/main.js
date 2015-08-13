@@ -1,11 +1,9 @@
-alert("Our Group ROCKED! Also go see Jurassic World");
-
 $("#dropbox").change(function beerchange() {
   if ($('#dropbox').val()=="zombieK") {
     console.log(beerchange);
 
 // Youtube JSON
-$.getJSON('/../../api/youtube/b-nektar.json')
+$.getJSON('/api/youtube/b-nektar.json')
 .then(function(bnektar){
   console.log(bnektar);
 
@@ -20,7 +18,7 @@ $.getJSON('/../../api/youtube/b-nektar.json')
 
 });
 
-$.getJSON('/../../api/youtube/mead.json')
+$.getJSON('/api/youtube/mead.json')
 .then(function(meads){
   console.log(meads);
 
@@ -33,7 +31,7 @@ $.getJSON('/../../api/youtube/mead.json')
 
 });
 // Beer JSON
-$.getJSON('/../../api/brewery-db/zombiekiller.json')
+$.getJSON('/api/brewery-db/zombiekiller.json')
  .then(function(zombiekiller){
    console.log(zombiekiller);
 
@@ -58,7 +56,7 @@ $.getJSON('/../../api/brewery-db/zombiekiller.json')
 
  else {
 
- $.getJSON('/../../api/brewery-db/kellerweis.json')
+ $.getJSON('/api/brewery-db/kellerweis.json')
   .then(function(kellerweis){
     console.log(kellerweis);
 
@@ -79,7 +77,7 @@ $.getJSON('/../../api/brewery-db/zombiekiller.json')
 
   });
   // Youtube JSON
-  $.getJSON('/../../api/youtube/mead.json')
+  $.getJSON('/api/youtube/mead.json')
   .then(function(meads){
     console.log(meads);
 
